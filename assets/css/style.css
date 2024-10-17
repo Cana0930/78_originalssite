@@ -1,44 +1,64 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 
-.head{
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: white;
+    padding: 14px 40px;
+
 }
 
-.top {
-    background-image: url(../img/IMG_4588.JPG);
+.top-section {
     
-}
-
-.title {
-
-    height: 800px;
-    width: 100%;
+    background-image: url(../img/island.JPG);
+    background-size: cover;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    font-size: 100px;
-    color: white;
+   
 }
 
+.greeting {
+    color: white;
+   font-size: 15vw;
+   
+}
+
+.intro-section {
+    height: 200px;   
+}
+
+.intro{
+    text-align: center;
+    line-height: 200px;
+
+}
 
 .choice{
-    /* height:300px; */
-    width:100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: rgb(242, 235, 219);
     padding: 50px 0;
-}
+} 
 
 #menu {
-    height: 200px;
-    width: 100px;
-    border: 1px solid;
-    text-align: center;
-    }
+    text-align: center; 
+    width: 33.33333%;
+      
+}
+
+#menu > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.details-1{
+    display: flex;
+    flex-direction: row;
+
+}
