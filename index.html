@@ -3,67 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>originalwabsite</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header>
-        <p class="head">ヘッダーですよ</p>
+         <div class="header-left">
+            <a href="index.html"><img class="logo" src="./assets/img/rogo.jpg" alt="ロゴ"></a>
+         </div>
+         <div class="header-left"></div>
+            <ul class="header-list">
+                <li><a href="#details-1">about</a></li>
+                <li><a href="#details-2">activity</a></li>
+                <li><a href="#details-3">stay</a></li>
+                <li><a href="#details-4">access</a></li>
+            </ul>
+         </div>
     </header>
 <main>
     <!-- 背景プラス文字のとこ -->
-    <div class="top-section"> 
-     <div class="greeting">
+    <div class="top-section">
+      <div class="slide-container">
+        <div class="slider-image">
+         <img src="./assets/img/furuzamamibeach.jpg" alt="古座間味ビーチ" class="active">
+         <img src="./assets/img/sup.jpeg" alt="サンセットsup">
+         <img src="./assets/img/nemo.jpeg" alt="カクレ">
+         <img src="./assets/img/sunsetbeach.jpg" alt="阿真ビーチ">
+        </div>
+      </div>
+      <div class="greeting">
         <h2>WELCOME</h2>
         <h3>TO</h3>
         <h1>ZAMAMI</h1>
-     </div>
+      </div>
     </div>
     <div class="intro-section">
-        <p class="intro">Are you ready?
-        </p>
+        <img src="./assets/img/bag-rogo.png" alt="">
+        <img src="./assets/img/camera-rogo.png" alt="">
+        <img src="./assets/img/haibi-rogo.png" alt="">
+        <img src="./assets/img/ticket-rogo.png" alt="">
+        <p class="intro">Are you ready to start your journey? </p>
     </div>
     <!-- 4つの選択肢 -->
     <div class="choice">
         <div id="menu" class="about">
+            <p>about</p>
             <img src="./assets/img/shima.png" alt="">
         </div>
         <div id="menu" class="activity">
+            <p>activity</p>
             <img src="./assets/img/kame.png" alt="">
         </div>
         <div id="menu" class="stay">
+            <p>staying</p>
             <img src="./assets/img/kai.png" alt="">
         </div>
         <div id="menu" class="howto">
+            <p>access</p>
             <img src="./assets/img/fune.png" alt="">
         </div>
     </div>
     <!-- 詳細について -->
     <div clsaa="details">
-        <div class="details-1">
-            <h1 class="details-1">座間味について</h1>
-            <img src="" alt="">
+        <div id="details-1">
+            <h1 class="d-titles">about ZAMAMI</h1>
+            <img src="./assets/img/takatsuki.jpg" alt="">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur repellat pariatur ea at dolorum voluptate quod asperiores atque accusantium, fuga blanditiis eligendi ducimus perspiciatis, magni qui, repellendus debitis earum molestias!
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis omnis ex repellendus maiores vero praesentium cupiditate, quos, harum labore blanditiis animi dignissimos, minus quo odit iusto dolorem nostrum ratione commodi.
             </p>
         </div>
-        <div>
-            <h1>アクティビティ</h1>
+        <div id="details-2">
+            <h1 class="d-titles">activity</h1>
+            <img src="./assets/img/diving.jpeg" alt="">
              <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas officia harum laboriosam, placeat error repellendus dolorem autem deleniti ad minima! Odio vel blanditiis saepe minus voluptates culpa quas nesciunt deleniti.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quae velit sint voluptatibus assumenda ipsam aut quisquam illum reiciendis minima hic cumque aspernatur mollitia accusantium, cupiditate tempore cum vero et!
              </p>
         </div>
-        <div>
-            <h1>宿泊</h1>
+        <div id="details-3">
+            <h1 class="d-titles">staying</h1>
+            <img src="./assets/img/mozukusoba.jpeg" alt="">
              <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsum repellendus totam eveniet illum quibusdam modi, laborum libero cum nostrum nemo sapiente obcaecati temporibus ea architecto rerum aut deserunt commodi.
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque pariatur deleniti doloribus itaque. Consequatur enim distinctio ex, iusto in ab ad accusamus error labore sed neque dolor, autem, nisi repudiandae?
              </p>
         </div>
-        <div>
-            <h1>アクセス</h1>
+        <div id="details-4">
+            <h1 class="d-titles">access</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.1318056822965!2d127.68176377819366!3d26.224906515363678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5697f076427ef%3A0xa8ad8eeb93e63309!2z6YKj6KaHIOazig!5e0!3m2!1sja!2sph!4v1729161815801!5m2!1sja!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
              <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sed voluptatum asperiores, odit maxime nesciunt similique alias, ipsa aut, rerum molestias perferendis placeat voluptas quidem quis officiis nihil ad sapiente?
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus beatae debitis, natus veniam aspernatur tenetur perspiciatis distinctio est libero adipisci tempore impedit quibusdam possimus voluptates consectetur ad maxime esse soluta.
@@ -76,7 +104,10 @@
 
 
 </main>
-<footer></footer>
+<footer>
+    <h1>フッターですよ</h1> -->
+
+</footer>
 <script src="./assets/JS/"></scriptsrc>
 </body>
 </html>

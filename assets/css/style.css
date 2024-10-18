@@ -1,64 +1,51 @@
+*{
+    background-color: whitesmoke;
+}
 
-header {
+header{
+    position: fixed;
+    height: 64px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding: 14px 40px;
-
+    /* padding: 14px 40px; */
+}
+.logo {
+    height: 66px;   
 }
 
-.top-section {
-    
-    background-image: url(../img/island.JPG);
-    background-size: cover;
+.header-list {
+    display: flex;
+}
+
+.header-list > li > a {
+    color: black;
+    font-size: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+.slide-container {
+    width: 100%;
     height: 100vh;
+    position: relative;
+}
+
+.active {
+    width: 80%;
+}
+
+/* img {
+    width: 0;
+} */
+
+
+
+.slider-image {
     display: flex;
-    flex-direction: column;
-    text-align: center;
     justify-content: center;
-   
-}
-
-.greeting {
-    color: white;
-   font-size: 15vw;
-   
-}
-
-.intro-section {
-    height: 200px;   
-}
-
-.intro{
-    text-align: center;
-    line-height: 200px;
-
-}
-
-.choice{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-between;
-    background-color: rgb(242, 235, 219);
-    padding: 50px 0;
-} 
-
-#menu {
-    text-align: center; 
-    width: 33.33333%;
-      
-}
-
-#menu > img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.details-1{
-    display: flex;
-    flex-direction: row;
-
-}
+    position: absolute;
+  }
