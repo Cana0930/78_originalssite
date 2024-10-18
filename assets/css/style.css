@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
 *{
+    box-sizing: border-box;
     background-color: whitesmoke;
+    font-family: "Londrina Sketch", sans-serif;
 }
 
 header{
@@ -10,7 +13,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    /* padding: 14px 40px; */
+    z-index: 1000;
 }
 .logo {
     height: 66px;   
@@ -28,24 +31,84 @@ header{
     padding-right: 15px;
 }
 
-.slide-container {
+
+  /* スライドショーのコンテナ */
+.slideshow-container {
     width: 100%;
-    height: 100vh;
+    position: relative;
+    margin: auto;
+    
+
+  }
+  
+  /* 各スライドのスタイル */
+  .slides {
+    display: none;
+    position: relative;
+    
+  }
+  
+  /* 画像がフェードイン/アウトするためのアニメーション */
+  .fade {
+    animation-name: fade;
+    animation-duration: 5s; 
+    animation-timing-function: ease-in-out; 
+    animation-fill-mode: both; /* 追加 */
+  }
+  
+  @keyframes fade {
+    from { opacity: 0; } 
+    to { opacity: 1; }   
+  }
+
+  .slideshow-container img {
+    height: 800px;  
+    width: 100%;    
+    object-fit: cover;
+    
+  }
+
+  .tops-section {
     position: relative;
 }
 
-.active {
-    width: 80%;
+.greeting {
+    font-size: 250px; /* 単位を追加 */
+    display: block;
+    color: lightcoral;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    position: absolute; /* セミコロンを追加 */
+    top: 55%; /* 追加 */
+    left: 50%; /* 追加 */
+    transform: translate(-50%, -50%); /* 中央に配置 */
 }
 
-/* img {
-    width: 0;
-} */
+.intro-section{
+    height: 200px;
+    margin-bottom: 40px;
+    position: relative;
+   
+}
 
-
-
-.slider-image {
-    display: flex;
-    justify-content: center;
+.intro-logo {
     position: absolute;
-  }
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.intro {
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    position: absolute; /* セミコロンを追加 */
+    top: 50%; /* 追加 */
+    left: 50%; /* 追加 */
+    transform: translate(-50%, -50%);
+}

@@ -6,66 +6,80 @@
     <title>originalwabsite</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- ヘッダー -->
     <header>
-         <div class="header-left">
+        <div class="header-left">
             <a href="index.html"><img class="logo" src="./assets/img/rogo.jpg" alt="ロゴ"></a>
-         </div>
-         <div class="header-left"></div>
+        </div>
+        <div class="header-right"> 
             <ul class="header-list">
                 <li><a href="#details-1">about</a></li>
                 <li><a href="#details-2">activity</a></li>
                 <li><a href="#details-3">stay</a></li>
                 <li><a href="#details-4">access</a></li>
             </ul>
-         </div>
-    </header>
-<main>
-    <!-- 背景プラス文字のとこ -->
-    <div class="top-section">
-      <div class="slide-container">
-        <div class="slider-image">
-         <img src="./assets/img/furuzamamibeach.jpg" alt="古座間味ビーチ" class="active">
-         <img src="./assets/img/sup.jpeg" alt="サンセットsup">
-         <img src="./assets/img/nemo.jpeg" alt="カクレ">
-         <img src="./assets/img/sunsetbeach.jpg" alt="阿真ビーチ">
         </div>
-      </div>
-      <div class="greeting">
-        <h2>WELCOME</h2>
-        <h3>TO</h3>
-        <h1>ZAMAMI</h1>
-      </div>
-    </div>
-    <div class="intro-section">
-        <img src="./assets/img/bag-rogo.png" alt="">
-        <img src="./assets/img/camera-rogo.png" alt="">
-        <img src="./assets/img/haibi-rogo.png" alt="">
-        <img src="./assets/img/ticket-rogo.png" alt="">
-        <p class="intro">Are you ready to start your journey? </p>
-    </div>
+    </header>
+    
+    <main>
+        <!-- 背景プラス文字のところ -->
+        <div class="top-section">
+            <div class="slideshow-container">
+                <div class="slides fade">
+                  <img src="./assets/img/furuzamamibeach.jpg" style="width:100%">
+                </div>
+                <div class="slides fade">
+                  <img src="./assets/img/sup.jpeg" style="width:100%">
+                </div>
+                <div class="slides fade">
+                  <img src="./assets/img/nemo.jpeg" style="width:100%">
+                </div>
+                <div class="slides fade">
+                  <img src="./assets/img/sunsetbeach.jpg" style="width:100%">
+                </div>
+            </div>
+            <div class="greeting">
+                <h2>WELCOME</h2>
+                <h3>TO</h3>
+                <h1>ZAMAMI</h1>
+            </div>
+        </div>
+    <!-- ロゴちりばめエリア -->
+        <div class="intro-section">
+           <div class="intro-logo">
+            <img src="./assets/img/bag-rogo.png" alt="">
+            <img src="./assets/img/camera-rogo.png" alt="">
+            <img src="./assets/img/haibi-rogo.png" alt="">
+            <img src="./assets/img/ticket-rogo.png" alt="">
+           </div> 
+            <p class="intro">Are you ready to start your journey? </p>
+        </div>
     <!-- 4つの選択肢 -->
-    <div class="choice">
-        <div id="menu" class="about">
+        <div class="choice">
+         <div id="menu" class="about">
             <p>about</p>
             <img src="./assets/img/shima.png" alt="">
-        </div>
-        <div id="menu" class="activity">
+         </div>
+         <div id="menu" class="activity">
             <p>activity</p>
             <img src="./assets/img/kame.png" alt="">
-        </div>
-        <div id="menu" class="stay">
+         </div>
+         <div id="menu" class="stay">
             <p>staying</p>
             <img src="./assets/img/kai.png" alt="">
-        </div>
-        <div id="menu" class="howto">
+         </div>
+         <div id="menu" class="howto">
             <p>access</p>
             <img src="./assets/img/fune.png" alt="">
+         </div>
         </div>
-    </div>
     <!-- 詳細について -->
-    <div clsaa="details">
+    <div class="details">
         <div id="details-1">
             <h1 class="d-titles">about ZAMAMI</h1>
             <img src="./assets/img/takatsuki.jpg" alt="">
@@ -105,9 +119,9 @@
 
 </main>
 <footer>
-    <h1>フッターですよ</h1> -->
+    <h1>フッターですよ</h1>
 
 </footer>
-<script src="./assets/JS/"></scriptsrc>
+<script src="./assets/JS/script.js"></scriptsrc>
 </body>
 </html>
