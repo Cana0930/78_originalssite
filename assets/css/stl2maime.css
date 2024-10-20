@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Londrina Sketch", sans-serif;
+}
+
+header{
+    position: fixed;
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 1000;
+}
+.logo {
+    height: 66px;   
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-list > li > a {
+    color: #eabebf;
+    font-size: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.contents {
+    font-size: 40px;
+}
+
+
+dl dt {
+    margin-left: 20px; /* dtの左余白を20pxに設定 */
+    font-weight: bold; /* dtを強調したい場合のスタイル */
+}
+
+dl dd {
+    margin-left: 40px; /* ddの左余白を40pxに設定 */
+}
+
+
+
+
+footer {
+    background-color: white;
+    font-size: 30px;
+    color: rgb(121, 115, 115);
+  }
