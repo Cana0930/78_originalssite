@@ -1,41 +1,43 @@
-/* #d6a3dc　紫
+/*
+#d6a3dc　紫
 #f7db70　黄色
 #eabebf　ピンク
 #75cce8　青
-#a5dee5 　薄青*/
+#a5dee5 　薄青
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Londrina Sketch", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Londrina Sketch", sans-serif;
 }
 
 header{
-    position: fixed;
-    height: 64px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    z-index: 1000;
+  position: fixed;
+  height: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  z-index: 1000;
 }
 .logo {
-    height: 66px;   
+  height: 66px;   
 }
 
 .header-list {
-    display: flex;
+  display: flex;
 }
 
 .header-list > li > a {
-    color: #eabebf;
-    font-size: 20px;
-    margin-left: 20px;
-    text-decoration: none;
-    padding-right: 15px;
+  color: #eabebf;
+  font-size: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  padding-right: 15px;
 }
 
 
@@ -120,7 +122,7 @@ header{
   display: flex;
   flex-direction: row;
   text-align: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: white;
 }
 
@@ -134,11 +136,13 @@ header{
   font-size: 50px;
 }
 
-.details {
-  padding-top: 50px;
-}
+.third-section {
+  background-color: #a5dee5; 
+  padding: 50px 0 80px 0;
 
-.details img {
+ }
+
+.third-section img {
   width: 30vw;
   height: auto;
   padding:10px;
@@ -151,15 +155,11 @@ iframe {
   
 }
 
-.details {
- background-color: #a5dee5; 
-}
-
 .d-titles {
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
   color:#eabebf;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 #main-contents {
@@ -170,7 +170,8 @@ iframe {
   margin: 20px auto;
 }
 
-.details p {
+
+.third-section p {
 width: 600px;
 margin: 20px;
 padding: 0.5em 1em;
@@ -178,9 +179,28 @@ font-size: 25px;
 color: rgb(121, 115, 115);
 }
 
+span {
+  display: block;
+  text-align: right;
+  margin-right: 80px;
+  font-size: 20px;
+  /* color: #75cce8; */
+}
+
 
 footer {
+  height: 40px;
+  display: flex;
   background-color: white;
   font-size: 30px;
   color: rgb(121, 115, 115);
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+
+small , i {
+flex-direction: row;
+text-align: center;
+justify-content: center;
 }

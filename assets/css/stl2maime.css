@@ -1,60 +1,186 @@
+/* 
+#d6a3dc　紫
+#f7db70　黄色
+#eabebf　ピンク
+#75cce8　青
+#a5dee5 　薄青
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Londrina Sketch", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Londrina Sketch", sans-serif;
 }
 
 header{
-    position: fixed;
-    height: 64px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    z-index: 1000;
+  position: fixed;
+  height: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  z-index: 1000;
 }
 .logo {
-    height: 66px;   
+  height: 66px;   
 }
 
 .header-list {
-    display: flex;
+  display: flex;
 }
 
 .header-list > li > a {
-    color: #eabebf;
-    font-size: 20px;
-    margin-left: 20px;
-    text-decoration: none;
-    padding-right: 15px;
+  color: #eabebf;
+  font-size: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  padding-right: 15px;
 }
+
 
 .title {
-    font-size: 40px;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 70px;
+  color: #f7db70;
 }
 
-.contents {
-    font-size: 40px;
+.section-1 {
+  margin: 50px 0;
+  display: flex; 
+  justify-content: center; 
+  text-align: center; 
+}
+
+.top-p {
+  width: 80%;
+  margin: 0;
+  font-size: 20px;
+}
+
+.top-img {
+  padding:10px;
+  border:1px #f7db70 solid;
+  margin-left: 20px;
+}
+
+.index {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#title-index , #title-index2 ,#title-index3 ,#title-index4 {
+  margin-top: 25px;
+  font-size: 60px;
+  color:#d6a3dc;
+  padding: 0.5em 1em;
+  
+}
+
+.second a {
+  text-decoration: none;
+}
+
+.second a:hover {
+  text-decoration: underline;
 }
 
 
-dl dt {
-    margin-left: 20px; /* dtの左余白を20pxに設定 */
-    font-weight: bold; /* dtを強調したい場合のスタイル */
+#main-contents {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-dl dd {
-    margin-left: 40px; /* ddの左余白を40pxに設定 */
+.main-1{
+  width: 500px;
+}
+
+#main-contents-2 ,#main-contents-3 ,#main-contents-4{
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-left: 30%;
+}
+
+.index img {
+  width: 120px;
+  height: 120px;
 }
 
 
+dd {
+  padding-left: 100px;
+}
+
+
+
+.slider-section {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.slideshow-container {
+  width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* 各スライドのスタイル */
+.slides {
+  display: none;
+  position: relative;
+  
+}
+
+/* 画像がフェードイン/アウトするためのアニメーション */
+.fade {
+  animation-name: fade;
+  animation-duration: 5s; 
+  animation-timing-function: ease-in-out; 
+  animation-fill-mode: both; /* 追加 */
+}
+
+@keyframes fade {
+  from { opacity: 0; } 
+  to { opacity: 1; }   
+}
+
+.slideshow-container img {
+  height: 500vx;  
+  width: 400vw;    
+  object-fit: cover;
+  padding:7px;
+	border:1px solid #ccc;
+	background:#fff;
+	box-shadow: 1px 1px 5px rgba(20,20,20,0.2);
+  
+}
 
 
 footer {
-    background-color: white;
-    font-size: 30px;
-    color: rgb(121, 115, 115);
-  }
+  height: 40px;
+  display: flex;
+  background-color: white;
+  font-size: 30px;
+  color: rgb(121, 115, 115);
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+
+small , i {
+flex-direction: row;
+text-align: center;
+justify-content: center;
+}
+
+
+
