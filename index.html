@@ -12,20 +12,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!-- ヘッダー -->
-    <header>
-        <div class="header-left">
-            <a href="index.html"><img class="logo" src="./assets/img/rogo.png" alt="ロゴ"></a>
-        </div>
-        <div class="header-right"> 
-            <ul class="header-list">
-                <li><a href="#details-1">about</a></li>
-                <li><a href="#details-2">activity</a></li>
-                <li><a href="#details-3">stay</a></li>
-                <li><a href="#details-4">access</a></li>
-            </ul>
-        </div>
-    </header>
+<!-- ヘッダー -->
+<header class="header">
+    <div class="header__inner">
+    <h1 class="header__title header-title">
+        <a href="#">
+        <img src="./assets/img/rogo.png" alt="ロゴ画像">
+        </a>
+    </h1>
+
+    <nav class="header__nav nav" id="js-nav">
+        <ul class="nav__items nav-items">
+        <li class="nav-items__item"><a href="#details-1">ABOUT</a></li>
+        <li class="nav-items__item"><a href="#details-2">ACTIVITY</a></li>
+        <li class="nav-items__item"><a href="#details-3">STAYING</a></li>
+        <li class="nav-items__item"><a href="#details-4">ACCESS</a></li>
+        </ul>
+    </nav>
+
+    <button class="header__hamburger hamburger" id="js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    </div>
+</header>
 <main>  
     <section>
         <!-- 背景プラス文字のところ -->
@@ -52,7 +64,7 @@
         </div>
     <!-- なんとなくのスペース -->
         <div class="second-section">
-            <p class="intro">Are you ready to start your journey? </p>
+            <p class="intro">Are you ready ? </p>
         </div>
     <!-- 4つの選択肢 -->
         <section class="choice">
@@ -78,7 +90,7 @@
         <h1 id=details-1 class="d-titles">about ZAMAMI</h1>
         <article id="main-contents">
             <img src="./assets/img/takatsuki.jpg" alt="">
-        <div>
+        <div class="staytune">
             <p>
             みなさんにとって大切なことはここには書かれていません。ここにはとても適当な文章が書かれているだけです。わかっていてもなお、読み進めてくれる猛者は大歓迎です。むしろありがとうございます。
             </p>
@@ -90,7 +102,7 @@
 
         <h1 id="details-2" class="d-titles">activity</h1>
         <article id="main-contents">
-        <div>
+        <div class="upsidedown">
             <p>
             すでに記載しておりますが、ご存じのとおりこちらも何も意味のない文章が記載されているだけです。ただひたすらそれっぽい雰囲気を醸し出しているだけですが、もしかして気に入りました？
             </p>
@@ -98,41 +110,45 @@
             <a href="./indx2maime.html">more</a>
             </span>
         </div>
+        <div>
         <img src="./assets/img/diving.jpeg" alt="">
-        </article>
+        </div>
+    </article>
 
         <h1 id="details-3" class="d-titles">staying</h1>
         <article id="main-contents">
             <img src="./assets/img/mozukusoba.jpeg" alt="">
-            <div>
+            <div class="">
                 <p>
                   ここまで読んでくれたあなたは、もしかしてとても暇人なのではありませんか？もしくは、仕方なく読むしかなかった人でしょう。そんな状況になってしまったあなたにとても同情します。
                 </p>
             <span>
                 <a href="./indx2maime.html">more</a>
             </span>
-        </div>
+            </div>
         </article>
 
         <h1 id="details-4" class="d-titles">access</h1>
         <article id="main-contents">
+            <div class="upsidedown">
+                <p>
+                せっかくここまで読んでくださったので、そんなあなたに特別に一つ、いいことを教えましょう。この文章は本当になんの意味もありません。でもあなたはもう気づいていているでしょう。実は結構楽しんでたということに…。
+                </p>
+                <span>
+                    <a href="./indx2maime.html">more</a>
+                </span>
+            </div>  
             <div>
-            <p>
-            せっかくここまで読んでくださったので、そんなあなたに特別に一つ、いいことを教えましょう。この文章は本当になんの意味もありません。でもあなたはもう気づいていているでしょう。実は結構楽しんでたということに…。
-            </p>
-            <span>
-                <a href="./indx2maime.html">more</a>
-            </span>
-        </div>  
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.1318056822965!2d127.68176377819366!3d26.224906515363678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5697f076427ef%3A0xa8ad8eeb93e63309!2z6YKj6KaHIOazig!5e0!3m2!1sja!2sph!4v1729161815801!5m2!1sja!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1944.7935962832012!2d127.68117898950807!3d26.22430995125514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5697f01de2d3b%3A0x61830d4226bbc833!2z5rOK44G16aCt5peF5a6i44OT44OrIOOBqOOBvuOCiuOCkw!5e0!3m2!1sja!2sph!4v1729688522090!5m2!1sja!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+            </div>
         </article>
     </section>
-    
-    
-
-
 </main>
+
+
+
+
 <footer>
    
     <small>Copyright &copy; edakana .inc</small>

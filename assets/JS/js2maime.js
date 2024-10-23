@@ -1,3 +1,44 @@
+const ham = $('#js-hamburger');
+const nav = $('#js-nav');
+
+// ハンバーガーメニューをクリックしたら
+ham.on('click', function (event) {
+  event.stopPropagation(); // イベントのバブリングを防止
+  ham.toggleClass('active'); // ハンバーガーメニューにactiveクラスを付け外し
+  nav.toggleClass('active'); // ナビゲーションメニューにactiveクラスを付け外す
+});
+
+// ページのどこかをクリックしたとき
+$(document).on('click', function () {
+  if (nav.hasClass('active')) {
+    ham.removeClass('active'); // ハンバーガーメニューからactiveクラスを削除
+    nav.removeClass('active'); // ナビゲーションメニューからactiveクラスを削除
+  }
+});
+
+
+
+$(document).ready(function() {
+  // ヘッダーの高さを変数として設定
+  var headerHeight = $('.header-right').outerHeight() +65; 
+
+  // ヘッダー内のリンクをクリックしたときの動作
+  $('.header-list a').click(function(event) {
+    event.preventDefault(); // デフォルトの動作を無効化
+
+    // クリックされたリンクのhref属性の値を取得（#details-1など）
+    var targetId = $(this).attr('href');
+
+    // 移動先の要素の位置を取得し、ヘッダーの高さを引いた値に移動
+    var targetPosition = $(targetId).offset().top - headerHeight;
+
+    // スムーズにスクロールする
+    $('html, body').animate({
+      scrollTop: targetPosition
+    }, 800); // スクロール速度（800ms）
+  });
+});
+
 let slideIndex = 0;
 showSlides();
 
@@ -34,7 +75,6 @@ $(document).ready(function() {
     $('#main-contents').slideToggle();  // スライドで表示・非表示を切り替える
   });
 });
-
 
 $(document).ready(function() {
   // 全てのdtとddを非表示にする

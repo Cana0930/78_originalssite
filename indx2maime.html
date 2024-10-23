@@ -12,17 +12,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <!-- ヘッダーやで -->
-<header>
-    <div class="header-left">
-        <a href="index.html"><img class="logo" src="./assets/img/rogo.png" alt="ロゴ"></a>
-    </div>
-    <div class="header-right"> 
-        <ul class="header-list">
-            <li><a href="#details-1">about</a></li>
-            <li><a href="#details-2">activity</a></li>
-            <li><a href="#details-3">stay</a></li>
-            <li><a href="#details-4">access</a></li>
+<header class="header">
+    <div class="header__inner">
+    <h1 class="header__title header-title">
+        <a href="#">
+        <img src="./assets/img/rogo.png" alt="ロゴ画像">
+        </a>
+    </h1>
+
+    <nav class="header__nav nav" id="js-nav">
+        <ul class="nav__items nav-items">
+        <li class="nav-items__item"><a href="#details-1">ABOUT</a></li>
+        <li class="nav-items__item"><a href="#details-2">ACTIVITY</a></li>
+        <li class="nav-items__item"><a href="#details-3">STAYING</a></li>
+        <li class="nav-items__item"><a href="#details-4">ACCESS</a></li>
         </ul>
+    </nav>
+
+    <button class="header__hamburger hamburger" id="js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
     </div>
 </header>
 <body>
@@ -34,9 +46,9 @@
         <h3>TO</h3>
         <h1>ZAMAMI</h1>
     </div>
-        <div class="section-1">
+    <div class="section-1">
         <p class="top-p">この文章はまたしてもなんの意味もありません。ただひたすらそれっぽい雰囲気を出すために記載されているだけです。懲りずにこちらも最後まで読んでくれるあなたはなんて暇な人なんでしょうか。こちらからは、この無駄な文章を読むための労力しか与えられませんが、それをわかった上で読んでくれるあなたはもしかしたらとてもいい人なのかもしれませんね。またしても最後まで読んでくれたあなたに、今回もいいことを教えてあげましょう。今日、私が食べたパンは美味しかったです。あなたにとっていいいことかどうかはわかりませんが、私にとってはいいことでした。</p>
-        </div>
+    </div>
 
 </section>
 <!-- 詳細やで -->
@@ -45,15 +57,15 @@
         <img src="./assets/img/shima.png" alt="島ロゴ">
         <a href=""><p id="title-index">about</p></a>
     </div>
-        <article id="main-contents">    
-    <div class="main-1">
-        <p>
-        今日の私は機嫌がいい。そう思い込むことによって世界はうまく回るのです。私は私の世界の中心にいて、いわば主人公です。つまり、他人はモブです。言い換えれば他の人の世界にとっての私はモブです。それでいいのです。仲良くできればもちろんいいですが、無理に仲良くする必要はありません。ただお互い必要以上に干渉せず、あなたはあなたの、私は私の世界をそれぞれ楽しみましょう。もちろん、人を頼ってはいけないわけではありません。その時はお互い様です。そして、良い行いはいつか自分に帰ってきます。
-        </p>
-    </div>
-    <div class="top-img">
-        <img src="./assets/img/sorakara.jpg" alt="航空写真">
-    </div>
+    <article id="main-contents">    
+        <div class="main-1">
+            <p>
+            今日の私は機嫌がいい。そう思い込むことによって世界はうまく回るのです。私は私の世界の中心にいて、いわば主人公です。つまり、他人はモブです。言い換えれば他の人の世界にとっての私はモブです。それでいいのです。仲良くできればもちろんいいですが、無理に仲良くする必要はありません。ただお互い必要以上に干渉せず、あなたはあなたの、私は私の世界をそれぞれ楽しみましょう。もちろん、人を頼ってはいけないわけではありません。その時はお互い様です。そして、良い行いはいつか自分に帰ってきます。
+            </p>
+        </div>
+        <div class="main-img">
+            <img src="./assets/img/sorakara.jpg" alt="航空写真">
+        </div>
     </article>
 
 
