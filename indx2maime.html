@@ -10,36 +10,60 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer type="text/javascript"></script>
+
+
+
 </head>
 <!-- ヘッダーやで -->
 <header class="header">
     <div class="header__inner">
-    <h1 class="header__title header-title">
-        <a href="#">
-        <img src="./assets/img/rogo.png" alt="ロゴ画像">
-        </a>
-    </h1>
+        <h1 class="header__title header-title">
+            <a href="./index.html"><img src="./assets/img/rogo.png" alt="ロゴ画像"></a>
+        </h1>
 
-    <nav class="header__nav nav" id="js-nav">
-        <ul class="nav__items nav-items">
-        <li class="nav-items__item"><a href="#details-1">ABOUT</a></li>
-        <li class="nav-items__item"><a href="#details-2">ACTIVITY</a></li>
-        <li class="nav-items__item"><a href="#details-3">STAYING</a></li>
-        <li class="nav-items__item"><a href="#details-4">ACCESS</a></li>
-        </ul>
-    </nav>
+        <nav class="header__nav nav" id="js-nav">
+            <ul class="nav__items nav-items">
+            <li class="nav-items__item"><a href="#title-index">ABOUT</a></li>
+            <li class="nav-items__item"><a href="#title-index2">ACTIVITY</a></li>
+            <li class="nav-items__item"><a href="#title-index3">STAYING</a></li>
+            <li class="nav-items__item"><a href="#title-index4">ACCESS</a></li>
+            </ul>
+        </nav>
 
-    <button class="header__hamburger hamburger" id="js-hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+        <button class="header__hamburger hamburger" id="js-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 </header>
 <body>
  <main>
     <!-- タイトルやで -->
+     <section class="slider-section">
+        <div class="slideshow-container">
+            <div class="slides fade">
+                <img src="./assets/img/cat.jpg" style="width:100%">
+            </div>
+            <div class="slides fade">
+                <img src="./assets/img/cloud.jpg" style="width:100%">
+            </div>
+            <div class="slides fade">
+                <img src="./assets/img/ferry.jpg" style="width:100%">
+            </div>
+            <div class="slides fade">
+                <img src="./assets/img/sorakara.jpg" style="width:100%">
+            </div>
+            <div class="slides fade">
+                <img src="./assets/img/hoshi.jpg" style="width:100%">
+            </div>
+        </div>   
+    </section>  
 <section>
     <div class="title">
         <h2>WELCOME</h2>
@@ -47,7 +71,12 @@
         <h1>ZAMAMI</h1>
     </div>
     <div class="section-1">
-        <p class="top-p">この文章はまたしてもなんの意味もありません。ただひたすらそれっぽい雰囲気を出すために記載されているだけです。懲りずにこちらも最後まで読んでくれるあなたはなんて暇な人なんでしょうか。こちらからは、この無駄な文章を読むための労力しか与えられませんが、それをわかった上で読んでくれるあなたはもしかしたらとてもいい人なのかもしれませんね。またしても最後まで読んでくれたあなたに、今回もいいことを教えてあげましょう。今日、私が食べたパンは美味しかったです。あなたにとっていいいことかどうかはわかりませんが、私にとってはいいことでした。</p>
+        <p class="top-p">
+            「世界が恋する海」<br>
+            船のアクセス方やアクティビティ <br>
+            島での滞在についてご紹介します！
+
+        </p>
     </div>
 
 </section>
@@ -58,14 +87,19 @@
         <a href=""><p id="title-index">about</p></a>
     </div>
     <article id="main-contents">    
-        <div class="main-1">
-            <p>
-            今日の私は機嫌がいい。そう思い込むことによって世界はうまく回るのです。私は私の世界の中心にいて、いわば主人公です。つまり、他人はモブです。言い換えれば他の人の世界にとっての私はモブです。それでいいのです。仲良くできればもちろんいいですが、無理に仲良くする必要はありません。ただお互い必要以上に干渉せず、あなたはあなたの、私は私の世界をそれぞれ楽しみましょう。もちろん、人を頼ってはいけないわけではありません。その時はお互い様です。そして、良い行いはいつか自分に帰ってきます。
-            </p>
-        </div>
-        <div class="main-img">
-            <img src="./assets/img/sorakara.jpg" alt="航空写真">
-        </div>
+    <div class="main-1">
+        <p>  
+            人口約700人、周囲は約23km<br>
+            慶良間諸島と呼ばれるこの一帯は2015年に国立公園に指定。沖縄本島から約40km離れたこの島には年間およそ6万人もの人が毎年訪れています。ダイビングやカヤック・SUPなどガイド付きマリンアクティビティが盛んなだけでなく、ミシュラングリーンガイドにも掲載された、古座間味ビーチでのスノーケリングや夕焼けスポットとして人気のマリリンの像、また島内にある5か所の展望台ではそれぞれ違った景色が楽しめます。レンタルサイクルや電動キックボードなども充実しているので、自分に合った楽しみ方がきっと見つかるはず! <br>
+            
+        </p>
+    </div>
+    <div class="photoofthis photo_of_this" >
+        <a href="./assets/img/haibisukasu.jpg" data-lightbox="group"><img src="./assets/img/haibisukasu.jpg" alt=""></a>
+        <a href="./assets/img/haibisukasu.jpg" data-lightbox="group"><img src="./assets/img/haibisukasu.jpg" alt=""></a>
+        <a href="./assets/img/haibisukasu.jpg" data-lightbox="group"><img src="./assets/img/haibisukasu.jpg" alt=""></a>
+        <a href="./assets/img/haibisukasu.jpg" data-lightbox="group"><img src="./assets/img/haibisukasu.jpg" alt=""></a>
+    </div> 
     </article>
 
 
@@ -75,25 +109,33 @@
         <a href=""><p id="title-index2">activity</p></a>
     </div>
     <article id="main-contents-2">
-        <div>
+        <div class="dl-container">
             <dl class="list-2">
                 <dt>セルフスノーケリング</dt>
                     <dd>古座間味ビーチ<br>
-                    レンタルショップもあって一日中楽しめる人気No. 1のビーチ
-                    </dd>
+                    レンタルショップもあって一日中楽しめる人気No. 1のビーチ。泳ぐもよし、ビーチチェアとパラソルを借りてのんびりするもよし。
                     <dd>阿真ビーチ<br>
-                    ウミガメと一緒に泳げるかも？
+                    タイミングによってはウミガメと一緒に泳げるかも？夕陽スポットとしても人気のビーチです。
                     </dd>
                 <dt>ダイビング</dt>
-                    <dd>体験ダイビングの案内です</dd>
-                    <dd>ファンダイビングの案内です</dd>
-                    <dd>ライセンス講習の案内です</dd>
+                    <dd>まずは体験ダイビングで水中世界を楽しみましょう。</dd>
+                    <dd>すでにCカードをお持ちのかたはファンダイビング。のんびり、ワイワイ、カメラ派など好みのスタイルで慶良間ブルーを満喫！</dd>
+                    <dd>ダイビングで世界は広がる！興味を持った方はぜひ、Cカード講習を</dd>
                 <dt>カヤック・SUPツアー</dt>
-                    <dd>カヤック・SUPツアーに関する案内です</dd>
+                    <dd>もっとお手軽に座間味を楽しみたいなら、カヤック・SUPもおすすめ!ガイド付きでスノーケリングも楽しめるプランがあります。
+
+                    </dd>
                 <dt>島探検・ホエールウォッチング</dt>
-                    <dd>島探検・ホエールウォッチングに関する案内です</dd>
+                    <dd>自転車やバイクを借りて島内散策もおすすめ！ビーチだけでなく、望台巡りもおすすめです。<br>1月〜3月中はホエールウオッチングが楽しめます!遭遇率ほぼ100%で運が良ければ船の間近で迫力満点のアクションが見られます！　<br>
+                    </dd>
             </dl>
         </div>
+        <div class="photoofthis photo_of_this2" >
+            <a href="./assets/img/ske.jpg" data-lightbox="group"><img src="./assets/img/ske.jpg" alt=""></a>
+            <a href="./assets/img/ske.jpg" data-lightbox="group"><img src="./assets/img/ske.jpg" alt=""></a>
+            <a href="./assets/img/ske.jpg" data-lightbox="group"><img src="./assets/img/ske.jpg" alt=""></a>
+            <a href="./assets/img/ske.jpg" data-lightbox="group"><img src="./assets/img/ske.jpg" alt=""></a>
+        </div> 
     </article>
 
     <div class="index">
@@ -101,55 +143,52 @@
        <a href=""><p id="title-index3">staying</p></a>
     </div>
     <article id="main-contents-3">
-        <div>
-            <dl class="list-3">
-                <dt>日帰り</dt>
-                    <dd>日帰りで遊ぶ場合の案内です</dd>
-                <dt>宿泊</dt>
-                    <dd>宿泊する場合の案内です</dd>
-                    <dd>宿について</dd>
-                    <dd>聞きたいですかね</dd>
-                <dt>ご飯について</dt>
-                    <dd>レストランなんかもあるよって</dd>
-                <dt>買い物</dt>
-                    <dd>105ストアってとこについて教えてあげてもいいよ</dd>
-            </dl>
+        <div class="dl-container">
+        <dl class="list-3">
+            <dt>日帰り</dt>
+                <dd>帰りの船の時間まで、めいいっぱい満喫!<br>
+                    港すぐの「yukuru館」ではシャワーが借りられます。
+                </dd>
+            <dt>宿泊</dt>
+                <dd>島内には民宿やゲストハウスなどの宿泊施設も充実!予約は電話やメールからの問い合わせがまだまだ主流です。島内には3つの集落があり、港からすぐの座間味集落は一番人気。飲食店も充実。<dd>
+            <dt>ご飯について</dt>
+                <dd>残念ながらランチを食べられるお店が少なめなので、要注意。夜はがっつり食べられる定食屋や居酒屋がたくさん!
+                </dd>
+            <dt>買い物</dt>
+                <dd>座間味集落にある、座間味島唯一のスーパー。朝7時〜夜9時ごろまで、ほぼ年中無休で空いています!ないものは、ないお店です。</dd>
+        </dl>
         </div>
+        <div class="photoofthis photo_of_this3">
+            <a href="./assets/img/sashimi.jpg" data-lightbox="group"><img src="./assets/img/sashimi.jpg" alt=""></a>
+            <a href="./assets/img/sashimi.jpg" data-lightbox="group"><img src="./assets/img/sashimi.jpg" alt=""></a>
+            <a href="./assets/img/sashimi.jpg" data-lightbox="group"><img src="./assets/img/sashimi.jpg" alt=""></a>
+            <a href="./assets/img/sashimi.jpg" data-lightbox="group"><img src="./assets/img/sashimi.jpg" alt=""></a>
+        </div> 
     </article>
         <div class="index">
-       <img src="./assets/img/fune.png" alt="船ロゴ">
-       <a href=""><p id="title-index4">access</p></a>
+            <img src="./assets/img/fune.png" alt="船ロゴ">
+            <a href=""><p id="title-index4">access</p></a>
     </div>   
     <article id="main-contents-4">
-        <div>
+        <div class="dl-container">
             <dl class="list-4">
                 <dt>フェリー座間味</dt>
-                    <dd>泊港からフェリー乗る場合のお知らせやで</dd>
+                    <dd>泊港から約2時間。フェリーなので車やバイクも一緒に乗せられます。1日1便のみ</dd>
                 <dt>高速船クイーン座間味</dt>
-                    <dd>北岸までいかなあかんねん</dd>
+                    <dd>フェリーよりも小さいぶん、スピードが出るので約1時間で到着。1日最大3便で朝一番早い便に乗って、最終便で日帰り滞在される方もたくさん。</dd>
+            </dl>
         </div>
+        <div class="photoofthis photo_of_this4">
+            <a href="./assets/img/fugu.jpg" data-lightbox="group"><img src="./assets/img/fugu.jpg" alt=""></a>
+            <a href="./assets/img/fugu.jpg" data-lightbox="group"><img src="./assets/img/fugu.jpg" alt=""></a>
+            <a href="./assets/img/fugu.jpg" data-lightbox="group"><img src="./assets/img/fugu.jpg" alt=""></a>
+            <a href="./assets/img/fugu.jpg" data-lightbox="group"><img src="./assets/img/fugu.jpg" alt=""></a>
+        </div> 
     </article>
+
 </section>
 
-<section class="slider-section">
-    <div class="slideshow-container">
-        <div class="slides fade">
-            <img src="./assets/img/cat.jpg" style="width:100%">
-        </div>
-        <div class="slides fade">
-            <img src="./assets/img/cloud.jpg" style="width:100%">
-        </div>
-        <div class="slides fade">
-            <img src="./assets/img/shi-sa-.jpg" style="width:100%">
-        </div>
-        <div class="slides fade">
-            <img src="./assets/img/sorakara.jpg" style="width:100%">
-        </div>
-        <div class="slides fade">
-            <img src="./assets/img/hoshi.jpg" style="width:100%">
-        </div>
-    </div>   
-</section>    
+<button><a href="./index.html">前のページへ</a></button>
  </main>
    <!-- フッターやで -->
     <footer>
