@@ -115,7 +115,7 @@
 
 /* ナビのリンク */
 .nav-items__item a {
-  color: black;
+  color: rgb(121, 115, 115);
   width: 100%;
   display: block;
   text-align: center;
@@ -295,13 +295,38 @@
   font-size: 60px;
   color: #eabebf;
   width: 200px;
+  border-bottom: solid;
+  
+  
 }
 @media screen and (max-width: 768px) {
   #title-index , #title-index2 ,#title-index3 ,#title-index4 {
     font-size: 40px;
     margin-top:15px;
+    border-bottom: solid;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
   }
 }
+
+.second a {
+  text-decoration: none;
+  text-underline-offset: 10px;
+  /* display: inline-block; */
+  line-height: 60px;
+  outline: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+
+.second a:hover {
+  
+  transform: scale(1.1,1.1);
+}
+
 
 
 
@@ -319,15 +344,6 @@
   }
 }
 
-.second a {
-  text-decoration: none;
-  text-underline-offset: 10px
-}
-
-.second a:hover {
-  text-decoration: underline 5px;
-  
-}
 
 @media screen and (max-width: 820px){
   #main-contents {

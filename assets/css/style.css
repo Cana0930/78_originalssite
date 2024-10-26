@@ -112,7 +112,7 @@
 
 /* ナビのリンク */
 .nav-items__item a {
-  color: black;
+  color: rgb(121, 115, 115);
   width: 100%;
   display: block;
   text-align: center;
@@ -155,7 +155,7 @@
 .hamburger span {
   width: 100%;
   height: 1px;
-  background-color: #000;
+  background-color: rgb(121, 115, 115);
   position: relative;
   transition: ease .4s;
   display: block;
